@@ -1,0 +1,22 @@
+/* Colors */
+
+// Primary Colors
+$bright-red: hsl(12, 88%, 59%);
+$dark-blue: hsl(228, 39%, 23%);
+
+// Neutral Colors
+$dark-grayish-blue: hsl(227, 12%, 61%);
+$very-dark-blue: hsl(233, 12%, 13%);
+$very-pale-red: hsl(13, 100%, 96%);
+$very-light-gray: hsl(0, 0%, 98%);
+$black: hsl(0, 0%, 0%);
+
+/* Media Queries Breakpoints */
+$maxMobile: "(max-width: 575px)";
+$minSmall: "(min-width: 576px)";
+$maxSmall: "(max-width: 767.5px)";
+$minMedium: "(min-width: 768px)";
+$maxMedium: "(max-width: 991px)";
+$minLarge: "(min-width: 992px)";
+$minExtraLarge: "(min-width: 1200px)";
+$minDoubleExtraLarge: "(min-width: 1400px)";

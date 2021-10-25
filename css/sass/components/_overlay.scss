@@ -1,0 +1,14 @@
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgb($black, 0.01), rgb($black, 0.6));
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  @media #{$maxMedium} {
+    &.visible {
+      display: block;
+    }
+  }
+}

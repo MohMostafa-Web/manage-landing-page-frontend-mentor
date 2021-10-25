@@ -1,0 +1,103 @@
+/* Start Footer Section */
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $very-dark-blue;
+  position: relative;
+  a {
+    color: $very-light-gray;
+    &:hover {
+      color: $bright-red;
+    }
+  }
+  .container {
+    .row {
+      .social {
+        .logo {
+          svg path[fill-rule="nonzero"] {
+            fill: $very-light-gray;
+          }
+        }
+        ul {
+          @media #{$minLarge} {
+            margin-top: 70px;
+          }
+          @media #{$maxMedium} {
+            margin-bottom: 50px;
+          }
+          li {
+            display: inline-block;
+            margin-right: 10px;
+            @media #{$maxMedium} {
+              margin: 0 15px;
+            }
+            a {
+              i {
+                font-size: 20px;
+                @media #{$maxMedium} {
+                  font-size: 37px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .links {
+        @media #{$maxMedium} {
+          margin-top: 60px;
+          margin-bottom: 20px;
+        }
+        & > div ul:nth-child(2) {
+          margin-left: 100px;
+        }
+        li {
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
+      }
+      & > div:last-child {
+        position: unset;
+      }
+      form {
+        width: fit-content;
+        position: relative;
+        input[type="email"] {
+          color: $dark-grayish-blue;
+          margin-right: 5px;
+          padding: 14px;
+          font-size: 14px;
+          border: 2px solid transparent;
+          outline: none;
+        }
+        input[type="submit"] {
+          padding: 14px 25px;
+        }
+        .message {
+          position: absolute;
+          bottom: -20px;
+          left: 20px;
+          font-size: 12px;
+          font-style: italic;
+          color: $bright-red;
+          margin: 0;
+        }
+      }
+      .copyright {
+        color: $dark-grayish-blue;
+        font-size: 12px;
+        @media #{$minLarge} {
+          width: fit-content;
+          margin: 60px 0 0 auto
+        }
+        @media #{$maxMedium} {
+          width: 100%;
+          position: absolute;
+          bottom: 20%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+/* End Footer Section */

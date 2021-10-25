@@ -1,0 +1,217 @@
+/* Start Features Section */
+.features {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow-x: clip;
+  .container {
+    position: relative;
+    .intro-text {
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        @media #{$maxMobile} {
+          font-size: 2.25em;
+        }
+      }
+    }
+    .features-content {
+      .feature {
+        @media #{$minLarge} {
+          padding-left: 100px;
+        }
+        h5 {
+          font-size: 1rem;
+          margin-bottom: 1rem;
+          position: relative;
+          span {
+            width: 70px;
+            height: 40px;
+            line-height: 37px;
+            background-color: $bright-red;
+            color: $very-light-gray;
+            position: absolute;
+            top: -10px;
+            left: -100px;
+            @media #{$maxMedium} {
+              display: inline-block;
+              position: relative;
+              top: 0;
+              left: 0;
+              margin-right: 15px
+            }
+          }
+          &::after {
+            content: '';
+            background-color: rgb($bright-red, 0.1);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 30px;
+            z-index: -1;
+            display: none;
+            @media #{$maxMedium} {
+              display: block;
+            }
+          }
+        }
+        p {
+          width: 100%;
+        }
+      }
+    }
+    .tablet-pattern {
+      position: absolute;
+      top: 290px;
+      left: -700px;
+      z-index: -1;
+      @media #{$maxMedium} {
+        max-width: 90%;
+        top: -100%;
+        right: -65%;
+        left: auto;
+      }
+      @media #{$maxSmall} {
+        top: -80%;
+        right: -60%;
+      }
+      @media #{$maxMobile} {
+        top: -40%;
+        right: -55%;
+      }
+    }
+  }
+}
+/* End Features Section */
+/* Start Testimonials Section */
+.testimonials {
+  h2 {
+    width: fit-content;
+    font-size: 2.5rem;
+    margin:  0 auto 70px;
+    @media #{$maxMobile} {
+      font-size: 2.25em;
+    }
+  }
+  .testimonials-slider {
+    .slick-slider {
+      max-height: 310px;
+      margin-bottom: 50px;
+      .slide {
+        padding-top: 50px;
+        margin: 0 15px;
+        .slide-caption {
+          padding: 50px 15px 30px;
+          background-color: $very-light-gray;
+          position: relative;
+          img {
+            width: 100px;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translatex(-50%);
+          }
+          h5 {
+            margin-top: 25px;
+            margin-bottom: 25px;
+          }
+          p {
+            width: 100%;
+            margin: 0;
+          }
+        }
+      }
+      .slick-prev, .slick-next {
+        display: none !important;
+      }
+    }
+    .carousel {
+      padding-bottom: 50px;
+      .container {
+        position: relative;
+        .carousel-inner {
+          .carousel-item {
+            padding-top: 50px;
+            img {
+              width: 100px;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translatex(-50%);
+            }
+            .carousel-caption {
+              background-color: $very-light-gray;
+              padding: 75px 20px 35px;
+              position: unset;
+              h5 {
+                margin-bottom: 25px;
+              }
+              p {
+                width: 100%;
+                margin: 0;
+                @media #{$maxMobile} {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+        .carousel-indicators {
+          bottom: -60px;
+          li {
+            width: 10px;
+            height: 10px;
+            background-clip: border-box;
+            border: 2px solid $bright-red;
+            border-radius: 50%;
+            opacity: 1;
+            &.active {
+              background-color: $bright-red;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-btn {
+    margin: 40px auto 50px;
+  }
+}
+/* End Testimonials Section */
+/* Start Simplify Section */
+.simplify {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $bright-red;
+  background-image: url(../images/bg-simplify-section-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 190px bottom;
+  @media #{$maxSmall} {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url(../images/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 25% 75%;
+    background-position: left center;
+  }
+  h2 {
+    color: $very-light-gray;
+    font-size: 2.5rem;
+    @media #{$maxMedium} {
+      width: 90%;
+      margin: auto;
+      font-size: 2.25rem;
+    }
+  }
+  .main-btn {
+    background-color: $very-light-gray;
+    color: $bright-red;
+    font-weight: bold;
+    margin-left: auto;
+    @media #{$maxMedium} {
+      margin: 25px auto 0;
+    }
+  }
+}
+/* End Simplify Section */

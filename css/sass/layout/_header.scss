@@ -1,0 +1,116 @@
+/** Start Header Section */
+header {
+  position: relative;
+}
+/* Start Navbar */
+.navbar {
+  padding: 50px 0;
+  @media #{$maxMobile} {
+    padding: 40px 0;
+  }
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 999;
+  }
+  .navbar-toggler {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    img {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  .navbar-collapse {
+    @media #{$maxMedium} {
+      width: 50%;
+      position: absolute;
+      top: 175%;
+      right: 15px;
+      z-index: 999;
+    }
+    @media #{$maxMobile} {
+      width: calc(100% - 30px);
+    }
+    .navbar-nav {
+      margin: auto;
+      @media #{$maxMedium} {
+        background: $very-light-gray;
+        padding: 25px;  
+        @include prefixer(border-radius, 6px, webkit moz ms o);
+      }
+      .nav-item {
+        padding: 0.5rem 1rem;
+        @media #{$maxMobile} {
+          padding: 0.7rem 1rem;
+          font-size: 18px;
+        }
+        &.active {
+          .nav-link {
+            color: $dark-grayish-blue;
+          }
+        }
+        .nav-link {
+          display: unset;
+          color: $dark-blue;
+          padding: 0;
+          font-weight: bold;
+          font-size: 14px;
+          &:hover {
+            color: $dark-grayish-blue;
+          }
+        }
+      }
+    }
+  }
+}
+/* End Navbar */
+/* Start Landing */
+.landing {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  min-height: calc(100vh - 144px);
+  overflow-x: clip;
+  @media #{$maxMedium} {
+    padding-top: 0;
+  }
+  @media #{$maxMobile} {
+    padding-bottom: 70px;
+  }
+  .intro-text {
+    @media #{$maxMedium} {
+      order: 2;
+    }
+    h1 {
+      font-size: 3.4em;
+      @media #{$maxMobile} {
+        font-size: 2.5em;
+      }
+      @media #{$maxMobile} {
+        margin: 0 0 0.25em;
+      }
+    }
+  }
+  .image {
+    @media #{$maxMedium} {
+      order: 1;
+    }
+    position: relative;
+    .tablet-pattern {
+      max-width: 130%;
+      position: absolute;
+      bottom: 65px;
+      left: 65px;
+      z-index: -1;
+      @media #{$maxMedium} {
+        max-width: 115%;
+      }
+    }
+  }
+}
+/* End Landing */
+/** End Header Section */

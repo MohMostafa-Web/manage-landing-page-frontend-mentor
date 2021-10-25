@@ -1,0 +1,12 @@
+.main-btn {
+  background-color: $bright-red;
+  color: $very-light-gray;
+  padding: 14px 32px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  @include prefixer(transition, opacity 0.3s, webkit moz ms o);
+  &:hover {
+    opacity: 0.5;
+  }
+}
