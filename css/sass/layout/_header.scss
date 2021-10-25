@@ -73,7 +73,6 @@ header {
 .landing {
   padding-top: 70px;
   padding-bottom: 50px;
-  min-height: calc(100vh - 144px);
   overflow-x: clip;
   @media #{$maxMedium} {
     padding-top: 0;
